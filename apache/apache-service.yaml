@@ -1,0 +1,17 @@
+#################################
+#       Service                 #
+#################################
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache-service
+  labels:
+    app: apache
+spec:
+  selector:
+    app: apache
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

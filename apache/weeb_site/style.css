@@ -1,0 +1,23 @@
+table {
+  border: 1px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+}
+img{
+	width:30%;
+}
+h1{
+	text-align: center
+}
+.raw1{
+	width:20%;
+}
+.raw2{
+	width:20%;
+	position:center;
+}
+.raw3{
+	width:50%;
+}

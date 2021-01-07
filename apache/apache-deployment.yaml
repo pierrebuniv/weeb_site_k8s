@@ -1,0 +1,32 @@
+#################################
+#       Deploiement             #
+#################################
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache-deployment
+  labels:
+    app: apache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apache
+  template:
+    metadata:
+      labels:
+        app: apache
+    spec:
+      containers:
+      - name: apache
+        image: yonclauss/weeb_image
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "350Mi"
+            cpu: "0.5"
+          requests:
+            memory: "200Mi"
+            cpu: "0.3"
