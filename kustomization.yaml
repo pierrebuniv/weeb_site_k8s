@@ -1,0 +1,7 @@
+resources:
+- mysql/mysql-pv.yaml
+- mysql/mysql-secret.yaml
+- mysql/mysql-service.yaml
+- mysql/mysql-deployment.yaml
+- apache/apache-service.yaml
+- apache/apache-deployment.yaml
